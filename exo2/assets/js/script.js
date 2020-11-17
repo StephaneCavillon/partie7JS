@@ -6,9 +6,9 @@ let btnEnlarge = document.querySelector('#btnEnlarge');
 
 
 // Création des Listeners
-btnBold.addEventListener('click', bold);
-btnColor.addEventListener('click', colorChange);
-btnEnlarge.addEventListener('click', enlarge);
+btnBold.onclick = bold;
+btnColor.onclick = colorChange;
+btnEnlarge.onclick = enlarge;
 
 
 // Création des fonctions
