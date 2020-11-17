@@ -1,17 +1,17 @@
 // Déclaration de la fonction
 function fois(a, b){
-    let result = a *b;
-
+    let result = a * b;
+    
     return result;
 };
 
 
 // déclaration des variables
-let number1 = document.getElementById('number1').value;
-let number2 = document.getElementById('number2').value;
 let resultbtn = document.getElementById('btnmult');
+let number1 = document.getElementById('number1');
+let number2 = document.getElementById('number2');
 
 //création des listener
 resultbtn.addEventListener('click', function (){
-    alert(fois(number1, number2));
+    alert(fois(number1.value, number2.value));
 });
